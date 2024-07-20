@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="books.css" />
+    <title>Animated Flex Cards</title>
+    <style>
+      /* Add this */
+      .navbar {
+        position: relative;
+        width: 100vw;
+        background-image: url("images/OIP.jpeg");
+        overflow: hidden;
+        padding: 10px 0;
+        box-sizing: border-box;
+      }
+      .navbar ul {
+        list-style: none;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+      }
+      .navbar li {
+        margin: 0 10px;
+      }
+      .navbar a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: "Comic Sans", cursive;
+        color: red;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .navbar a:hover {
+        background-color: #555;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the navigation bar here -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 id="hesd">My favorite Books</h1>
+    <div class="wrapper">
+      <div class="container">
+        <input type="radio" name="slide" id="c1" checked />
+        <label for="c1" class="card">
+          <div class="row"></div>
+        </label>
+        <input type="radio" name="slide" id="c2" />
+        <label for="c2" class="card">
+          <div class="row"></div>
+        </label>
+
+        <input type="radio" name="slide" id="c3" />
+        <label for="c3" class="card">
+          <div class="row"></div>
+        </label>
+        <input type="radio" name="slide" id="c4" />
+        <label for="c4" class="card">
+          <div class="row"></div>
+        </label>
+
+        <input type="radio" name="slide" id="c5" checked />
+        <label for="c5" class="card">
+          <div class="row"></div>
+        </label>
+        <input type="radio" name="slide" id="c6" checked />
+        <label for="c6" class="card">
+          <div class="row"></div>
+        </label>
+
+        <input type="radio" name="slide" id="c7" checked />
+        <label for="c7" class="card">
+          <div class="row"></div>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>

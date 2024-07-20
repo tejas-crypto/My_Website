@@ -1,0 +1,22 @@
+body {
+  background-image: url("boat-clear-sky-clouds-sea-5k-od-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0%;
+}
+#clockcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+#clock {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 5em;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  width: 100%;
+  background-color: hsla(185, 56%, 54%, 0.165);
+}

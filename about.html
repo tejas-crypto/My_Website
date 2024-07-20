@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+    <title>About</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="one">
+      <h1>Welcome, visitors!</h1>
+      <p>
+        I'm Tejas Thimmaiah, and this is my portfolio website. At 19 years old
+        in 2024, I'm passionate about developing websites and games. This is the
+        second website that I've built, and I will be showcasing my future
+        achievements here. Primarily, I will feature my new game, which is
+        currently developing.
+      </p>
+      <svg
+        id="visual"
+        viewBox="0 0 960 540"
+        width="960"
+        height="540"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <defs>
+          <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            ></feBlend>
+            <feGaussianBlur
+              stdDeviation="163"
+              result="effect1_foregroundBlur"
+            ></feGaussianBlur>
+          </filter>
+        </defs>
+        <rect width="960" height="540" fill="#6600FF"></rect>
+        <g id="g0" class="svg-group" filter="url(#blur1)">
+          <circle cx="642" cy="18" fill="#00CC99" r="363"></circle>
+          <circle cx="423" cy="65" fill="#6600FF" r="363"></circle>
+          <circle cx="447" cy="291" fill="#00CC99" r="363"></circle>
+          <circle cx="789" cy="340" fill="#00CC99" r="363"></circle>
+          <circle cx="192" cy="291" fill="#6600FF" r="363"></circle>
+          <circle cx="588" cy="506" fill="#00CC99" r="363"></circle>
+        </g>
+        <g id="g1" class="svg-group" filter="url(#blur1)">
+          <circle cx="145" cy="91" fill="#00CC99" r="363"></circle>
+          <circle cx="510" cy="478" fill="#6600FF" r="363"></circle>
+          <circle cx="610" cy="124" fill="#00CC99" r="363"></circle>
+          <circle cx="348" cy="210" fill="#00CC99" r="363"></circle>
+          <circle cx="908" cy="232" fill="#6600FF" r="363"></circle>
+          <circle cx="272" cy="430" fill="#00CC99" r="363"></circle>
+        </g>
+        <g id="g2" class="svg-group" filter="url(#blur1)">
+          <circle cx="784" cy="499" fill="#00CC99" r="363"></circle>
+          <circle cx="414" cy="356" fill="#6600FF" r="363"></circle>
+          <circle cx="241" cy="248" fill="#00CC99" r="363"></circle>
+          <circle cx="402" cy="126" fill="#00CC99" r="363"></circle>
+          <circle cx="104" cy="402" fill="#6600FF" r="363"></circle>
+          <circle cx="951" cy="147" fill="#00CC99" r="363"></circle>
+        </g>
+        <g id="g3" class="svg-group" filter="url(#blur1)">
+          <circle cx="947" cy="347" fill="#00CC99" r="363"></circle>
+          <circle cx="25" cy="389" fill="#6600FF" r="363"></circle>
+          <circle cx="813" cy="526" fill="#00CC99" r="363"></circle>
+          <circle cx="390" cy="498" fill="#00CC99" r="363"></circle>
+          <circle cx="752" cy="86" fill="#6600FF" r="363"></circle>
+          <circle cx="378" cy="216" fill="#00CC99" r="363"></circle>
+        </g>
+        <g id="g4" class="svg-group" filter="url(#blur1)">
+          <circle cx="74" cy="12" fill="#00CC99" r="363"></circle>
+          <circle cx="841" cy="254" fill="#6600FF" r="363"></circle>
+          <circle cx="68" cy="412" fill="#00CC99" r="363"></circle>
+          <circle cx="135" cy="197" fill="#00CC99" r="363"></circle>
+          <circle cx="319" cy="105" fill="#6600FF" r="363"></circle>
+          <circle cx="490" cy="486" fill="#00CC99" r="363"></circle>
+        </g>
+        <g id="g5" class="svg-group" filter="url(#blur1)">
+          <circle cx="121" cy="342" fill="#00CC99" r="363"></circle>
+          <circle cx="854" cy="118" fill="#6600FF" r="363"></circle>
+          <circle cx="484" cy="89" fill="#00CC99" r="363"></circle>
+          <circle cx="418" cy="506" fill="#00CC99" r="363"></circle>
+          <circle cx="661" cy="506" fill="#6600FF" r="363"></circle>
+          <circle cx="822" cy="383" fill="#00CC99" r="363"></circle>
+        </g>
+      </svg>
+    </section>
+    <script>
+      const groups = document.querySelectorAll(".svg-group");
+      let currentIndex = 0;
+
+      function showNextGroup() {
+        groups[currentIndex].style.opacity = "0";
+        currentIndex = (currentIndex + 1) % groups.length;
+        groups[currentIndex].style.opacity = "1";
+
+        setTimeout(showNextGroup, 2000);
+      }
+
+      // Set initial opacity
+      groups.forEach((group, index) => {
+        group.style.opacity = index === 0 ? "1" : "0";
+        group.style.transition = "opacity 0.1s ease-in-out";
+      });
+
+      showNextGroup();
+    </script>
+  </body>
+</html>

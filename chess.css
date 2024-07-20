@@ -1,0 +1,17 @@
+.board {
+  width: 400px;
+  margin: auto;
+}
+
+.info {
+  width: 400px;
+  margin: auto;
+  background-color: cadetblue;
+  background-blend-mode: luminosity;
+  border-color: black;
+}
+
+.move-history {
+  max-height: 100px;
+  overflow-y: scroll;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="weather.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <h1>Enter The below details:</h1>
+    <br />
+    <form class="wform">
+      <input type="text" class="winput city-input" placeholder="ENTER CITY" />
+      <input
+        type="text"
+        class="winput state-input"
+        placeholder="ENTER STATE CODE (optional)"
+      />
+      <input
+        type="text"
+        class="winput country-input"
+        placeholder="ENTER COUNTRY CODE (optional)"
+      />
+      <button type="submit">GET WEATHER</button>
+    </form>
+
+    <div class="card" style="display: none">
+      <p class="cityname"></p>
+      <p class="temperater"></p>
+      <p class="description"></p>
+      <p class="emoji"></p>
+      <p class="climate-message"></p>
+    </div>
+    <p id="note"></p>
+    <script src="weather.js"></script>
+  </body>
+</html>

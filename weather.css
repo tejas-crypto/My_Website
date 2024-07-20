@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(199, 227, 252);
+
+  padding: 20px;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wform {
+  margin: 20px;
+}
+.winput {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+button[type="submit"]:active {
+  color: rgb(0, 0, 0);
+  background-color: rgba(98, 210, 137, 0);
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+.temperater {
+  font-size: 2rem;
+  margin: 0;
+}
+.emoji {
+  font-size: 7rem;
+  margin: 0;
+}
+.errordisplay {
+  margin: 0;
+}
+.description {
+  margin: 5px;
+}
+.cityname {
+  margin: 5px;
+}
+.climate-message {
+  margin: 10px;
+  font-size: 1.5rem;
+  color: #000;
+}
+#note {
+  background-color: rgb(199, 227, 252);
+  border: 2px solid rgba(236, 40, 40, 0.849);
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 2px;
+}
