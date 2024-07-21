@@ -1,5 +1,15 @@
-/*this is slider script */
+window.addEventListener("load", function () {
+  const loadingScreen = document.getElementById("loading-screen");
+  const website = document.getElementById("website");
 
+  // Check if all resources have finished loading
+  if (document.readyState === "complete") {
+    // Hide loading screen and display website
+    loadingScreen.style.display = "none";
+    website.style.display = "block";
+  }
+});
+/*this is slider script */
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
 let carouselDom = document.querySelector(".carousel");
@@ -44,7 +54,7 @@ function showSlider(type) {
 }
 
 /*security*/
-/*document.addEventListener("contextmenu", (event) => event.preventDefault());
+document.addEventListener("contextmenu", (event) => event.preventDefault());
 document.onkeydown = function (e) {
   if (e.keyCode == 123) {
     return false;
@@ -59,4 +69,3 @@ document.onkeydown = function (e) {
     return false;
   }
 };
-*/
