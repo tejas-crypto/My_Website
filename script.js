@@ -53,7 +53,7 @@ function showSlider(type) {
   }, timeAutoNext);
 }
 
-/*security
+/*security*/
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 document.onkeydown = function (e) {
   if (e.keyCode == 123) {
@@ -68,4 +68,4 @@ document.onkeydown = function (e) {
   if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
     return false;
   }
-};*/
+};
