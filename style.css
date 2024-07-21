@@ -9,6 +9,11 @@
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+}
+
 #loading-screen {
   position: fixed;
   top: 0;
@@ -123,9 +128,9 @@ header h1 {
 }
 .inner {
   transform: skew(-135deg);
-  background: linear-gradient(45deg, skyBlue, black);
+  background-color: skyblue;
   list-style-type: none;
-  color: rgb(185, 185, 185);
+  color: rgb(0, 0, 0);
 }
 .inner ul {
   list-style-type: none;
@@ -471,7 +476,10 @@ header h1 {
   .carousel .list .item .content .titel {
     font-size: 30px;
   }
-
+  body {
+    width: 100%;
+    zoom: 1;
+  }
   #im {
     object-position: right;
   }
@@ -480,6 +488,28 @@ header h1 {
   }
   #im3 {
     object-position: 83% 25%;
+  }
+  .inner {
+    position: absolute;
+    top: 10px;
+
+    width: 100%;
+  }
+  #inner1 {
+    top: 15px;
+    right: 10px;
+  }
+  .inner h2 {
+    font-size: 0.5rem;
+  }
+  .inner li {
+    font-size: 0.4rem;
+  }
+  .midSection .midInnerSection h2 {
+    font-size: 2rem;
+  }
+  .midSection .midInnerSection p {
+    font-size: 1rem;
   }
 }
 
@@ -558,7 +588,7 @@ header h1 {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 678px) {
   .banner .slider {
     width: 110px; /*110 and 140*/
     height: 140px;
