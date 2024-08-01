@@ -12,6 +12,7 @@ body {
 #hesd {
   text-align: center;
   box-shadow: 5px 5px 3px;
+  width: 100%;
 }
 
 .wrapper {
@@ -34,7 +35,7 @@ body {
   border-radius: 0.75rem;
   background-size: cover;
   cursor: pointer;
-  overflow: hidden;
+  overflow: scroll;
   border-radius: 2rem;
   margin: 0 10px;
   display: flex;
@@ -95,7 +96,7 @@ input:checked + label {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #baafaf;
   display: flex;
   align-items: center;
   justify-content: center;

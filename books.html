@@ -22,6 +22,7 @@
         padding: 0;
         display: flex;
         justify-content: left;
+        width: 100%;
       }
       .navbar li {
         margin: 0 10px;
@@ -34,10 +35,16 @@
         padding: 10px;
         text-align: center;
         cursor: pointer;
+        width: 100%;
       }
       .navbar a:hover {
         background-color: #555;
         padding: 10px;
+      }
+      @media (max-width: 600px) {
+        .navbar a {
+          padding: 1px;
+        }
       }
     </style>
   </head>
